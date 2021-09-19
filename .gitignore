@@ -2,6 +2,11 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
+<<<<<<< HEAD
 /.idea
 /.vscode
 /resource
+=======
+/ProjectT/.vs/ProjectT/v16
+/.idea
+>>>>>>> f9e3fa66411c129789f3454d7df7b3d6304206ed
