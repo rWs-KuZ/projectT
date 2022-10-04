@@ -2,13 +2,36 @@ package oo;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.ReflectPermission;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
+
+import oo.workflow.Console;
 
 public class Main {
+    //top to end
+    //console command taker
+    //resource management
+    //multiple process
+    //dual task
+    //ai embeded
+
     public static void main(String[] args) {
+        String cmd;
+        int cc = 0;
+        Scanner sc = new Scanner(System.in);
+        boolean exit = true;
+        while(exit){
+            cmd = sc.nextLine();
+            System.out.print(cc);
+            System.out.print(": ");
+            System.out.println(cmd);
+            if(cmd != null && cmd.equals("exit")){
+                exit = false;
+            }
+            cc++;
+        }
+        System.out.println("Bye");
+    }
+    public void showProperties(){
         Properties props=System.getProperties();
         props.list(System.out);
     }
